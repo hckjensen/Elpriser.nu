@@ -1,0 +1,19 @@
+/* Font & Icons */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+
+
+/* Palette */
+
+:root{
+    --text: #EBEBEB ;
+    --text2: #55EC20;
+    --main: #27282B;
+    --secondary: #201E1E;
+}
+
+
+/* Styling */
+
+.gearSvg{
+    fill: var(--text2);
+}
