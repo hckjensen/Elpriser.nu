@@ -6,6 +6,7 @@
     <title>ElPriser</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/modal.js" defer></script>
     <script
       src="https://kit.fontawesome.com/e0a3eb9952.js"
       crossorigin="anonymous"
@@ -24,11 +25,19 @@
             <li id="item2" class="nav-item">LIGE NU</li>
             <li id="item3" class="nav-item">HISTORIK</li>
           </ul>
-          <i class="fa-solid fa-gear"></i>
+          <i id="openModal" class="fa-solid fa-gear"></i>
         </div>
       </div>
     </header>
     <main>
+        <div class="modal" id="modal">
+            <div class="innerModal" id="innerModal">
+                <i id="closeModal" class="fa-regular fa-circle-xmark" onclick="closeModal()"></i>
+                <div class="contentwrapper">
+                    
+                </div>
+            </div>
+        </div>
       <div class="container-main">
         <div class="page page1">
           <p>ELPRISEN LIGE NU</p>

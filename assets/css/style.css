@@ -300,6 +300,45 @@ i{
     background-color: var(--secondary);
 }
 
+/* Modal */
+
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 99;
+}
+
+.innerModal{
+    position: absolute;
+    width: 717px;
+    height: 531px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 8px;
+
+    background-color: var(--main);
+    
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#openModal{
+    cursor: pointer;
+}
+
+#closeModal{
+    transform: scale(2);
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
 
 
 
@@ -367,7 +406,7 @@ i{
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 376px) {
     
     .oversigt-wrapper, #historik-wrapper{
         height: 340px;
