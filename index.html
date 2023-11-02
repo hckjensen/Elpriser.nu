@@ -1,16 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ElPriser</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/script.js" defer></script>
-</head>
-<body>
-    <div id="container" class="oversigt">
-        <svg class="gearSvg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"/></svg>
-    </div>
-    
-</body>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="nav-left">
+          <img class="nav-icon" src="assets/appIcons/mainIcon.svg" alt="" />
+          <p class="nav-text">El Prisen.nu</p>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-menu" id="mobile-nav">
+                <li id="item1" class="nav-item">OVERSIGT</li>
+                <li id="item2" class="nav-item">LIGE NU</li>
+                <li id="item3" class="nav-item">HISTORIK</li>
+            </ul>
+          <img id="nav-gear" class="nav-icon" src="assets/appIcons/gear-solid.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-main">
+        <div class="page page1">
+          <p>ELPRISEN LIGE NU</p>
+          <div id="eclipse-container">
+            <div id="eclipse1">
+              <div id="eclipse2">
+                <div id="eclipse3">
+                    <p>AMOUNT</p>
+                    <p>PER kWh</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div id="currentTime">
+            <p>currentTime</p>
+          </div>
+          <div id="lowHigh">
+            <div id="lowPrice">
+                <div class="eclipse-small">
+                    <div class="eclipse-small2">
+                        <p id="minPrice"></p>
+                        <p>PR. KWH</p>
+                    </div>
+                </div>
+                <p>LAVESTE PRIS</p>
+            </div>
+            <div id="highPrice">
+                <div class="eclipse-small">
+                    <div class="eclipse-small2">
+                        <p id="maxPrice"></p>
+                        <p>PR. KWH</p>
+                    </div>
+                </div>
+                <p>HØJESTE PRIS</p>
+            </div>
+          </div>
+          <section id="bottom-text">
+            <p>alle priser er eksl. moms og afgifter.
+                <br>
+                <br>
+                 Du vises lige nu priserne for region øst danmark</p>
+          </section>
+        </div>
+        <div class="page page2">
+          <p>OVERSIGT</p>
+          <div class="oversigt-wrapper">
+            <div class="oversigt-container">
+                <div> kl. 00.00</div>
+                <div id="pris0"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 01.00</div>
+                <div id="pris1"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 02.00</div>
+                <div id="pris2"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 03.00</div>
+                <div id="pris3"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 04.00</div>
+                <div id="pris4"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 05.00</div>
+                <div id="pris5"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 06.00</div>
+                <div id="pris6"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 07.00</div>
+                <div id="pris7"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 08.00</div>
+                <div id="pris8"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 09.00</div>
+                <div id="pris9"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 10.00</div>
+                <div id="pris10"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 11.00</div>
+                <div id="pris11"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 12.00</div>
+                <div id="pris12"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 13.00</div>
+                <div id="pris13"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 14.00</div>
+                <div id="pris14"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 15.00</div>
+                <div id="pris15"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 16.00</div>
+                <div id="pris16"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 17.00</div>
+                <div id="pris17"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 18.00</div>
+                <div id="pris18"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 19.00</div>
+                <div id="pris19"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 20.00</div>
+                <div id="pris20"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 21.00</div>
+                <div id="pris21"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 22.00</div>
+                <div id="pris22"></div>
+            </div>
+            <div class="oversigt-container">
+                <div> kl. 23.00</div>
+                <div id="pris23"></div>
+            </div>
+
+
+          </div>
+        </div>
+        <div class="page page3">
+          <p>HISTORIK</p>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
 </html>
