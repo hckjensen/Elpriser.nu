@@ -15,7 +15,8 @@ if (currentDay < 10){
 }
 
 // Format the date as a string (MM/DD/YYYY or DD/MM/YYYY)
-const formattedDate = `${currentMonth}/${currentDay}/${currentYear}`;
+const formattedDate = `${currentDay}-${currentMonth}-${currentYear}`;
+document.getElementById('selected-date').innerHTML = `${formattedDate}`
 
 // Display the current date
 console.log("Current Date:", formattedDate);
@@ -76,16 +77,6 @@ getData()
 
 
 
-
-
-
-
-
-
-
-
-
-
 // NAV-BAR select
 const navItem = document.querySelectorAll('.nav-item')
 const pages = document.querySelectorAll('.page')
@@ -116,7 +107,25 @@ navItem.forEach(item => {
     })
 });
 
-// 
+// Pick Date
+
+const pickDate = document.getElementById('datepicker')
+
+pickDate.addEventListener('change', function(){
+    const newDate = new Date(this.value);
+    const selectedDate = document.getElementById('selected-date')
+
+    const newYear = newDate.getFullYear();
+    const newMonth = newDate.getMonth() + 1; // Adding 1 because getMonth() returns values from 0 to 11.
+    const newDay = newDate.getDate();
+
+    selectedDate.innerHTML = `${newDay}-${newMonth}-${newYear}`
+
+
+    console.log('Year: ' + newYear);
+    console.log('Month: ' + newMonth);
+    console.log('Date: ' + newDay);
+})
 
 
 

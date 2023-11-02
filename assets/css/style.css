@@ -28,6 +28,10 @@ body{
     color: #EBEBEB;
 }
 
+i{
+    color: var(--text2);
+}
+
 /* Nav */
 
 .navbar{
@@ -47,7 +51,11 @@ body{
 }
 
 .nav-right{
-    margin-right: 10px;
+    margin-right: 30px;
+}
+
+.nav-right i {
+    font-size: 1.8rem;
 }
 
 .nav-text{
@@ -94,6 +102,7 @@ body{
 }
 
 
+/* LIGE NU */
 
 #eclipse-container{
     position: relative;
@@ -248,6 +257,41 @@ body{
     border-radius: 8px;
 }
 
+
+/* HISTORIK */
+
+#historik-wrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    height: 500px;
+    overflow: scroll;
+}
+
+#historik-wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+#calendar-container{
+    position: relative;
+    margin-bottom: 50px;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#datepicker{
+    position:absolute;
+    right: 15px;
+    opacity: 0;
+    z-index: 9999;
+}
+
+
+
+
+
+
+
 /* Footer */
 
 
@@ -289,7 +333,7 @@ body{
 
 
     /* Hide elements  */
-    #lowHigh, #bottom-text, #nav-gear, .nav-text{
+    #lowHigh, #bottom-text, .nav-text, .nav-right > i{
         display: none;
     }
 

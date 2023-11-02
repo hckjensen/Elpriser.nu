@@ -6,6 +6,10 @@
     <title>ElPriser</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/e0a3eb9952.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
@@ -15,12 +19,12 @@
           <p class="nav-text">El Prisen.nu</p>
         </div>
         <div class="nav-right">
-            <ul class="nav-menu" id="mobile-nav">
-                <li id="item1" class="nav-item">OVERSIGT</li>
-                <li id="item2" class="nav-item">LIGE NU</li>
-                <li id="item3" class="nav-item">HISTORIK</li>
-            </ul>
-          <img id="nav-gear" class="nav-icon" src="assets/appIcons/gear-solid.svg" alt="" />
+          <ul class="nav-menu" id="mobile-nav">
+            <li id="item1" class="nav-item">OVERSIGT</li>
+            <li id="item2" class="nav-item">LIGE NU</li>
+            <li id="item3" class="nav-item">HISTORIK</li>
+          </ul>
+          <i class="fa-solid fa-gear"></i>
         </div>
       </div>
     </header>
@@ -32,10 +36,9 @@
             <div id="eclipse1">
               <div id="eclipse2">
                 <div id="eclipse3">
-                    <p>AMOUNT</p>
-                    <p>PER kWh</p>
+                  <p>AMOUNT</p>
+                  <p>PER kWh</p>
                 </div>
-
               </div>
             </div>
           </div>
@@ -44,136 +47,240 @@
           </div>
           <div id="lowHigh">
             <div id="lowPrice">
-                <div class="eclipse-small">
-                    <div class="eclipse-small2">
-                        <p id="minPrice"></p>
-                        <p>PR. KWH</p>
-                    </div>
+              <div class="eclipse-small">
+                <div class="eclipse-small2">
+                  <p id="minPrice"></p>
+                  <p>PR. KWH</p>
                 </div>
-                <p>LAVESTE PRIS</p>
+              </div>
+              <p>LAVESTE PRIS</p>
             </div>
             <div id="highPrice">
-                <div class="eclipse-small">
-                    <div class="eclipse-small2">
-                        <p id="maxPrice"></p>
-                        <p>PR. KWH</p>
-                    </div>
+              <div class="eclipse-small">
+                <div class="eclipse-small2">
+                  <p id="maxPrice"></p>
+                  <p>PR. KWH</p>
                 </div>
-                <p>HØJESTE PRIS</p>
+              </div>
+              <p>HØJESTE PRIS</p>
             </div>
           </div>
           <section id="bottom-text">
-            <p>alle priser er eksl. moms og afgifter.
-                <br>
-                <br>
-                 Du vises lige nu priserne for region øst danmark</p>
+            <p>
+              alle priser er eksl. moms og afgifter.
+              <br />
+              <br />
+              Du vises lige nu priserne for region øst danmark
+            </p>
           </section>
         </div>
         <div class="page page2">
           <p>OVERSIGT</p>
           <div class="oversigt-wrapper">
             <div class="oversigt-container">
-                <div> kl. 00.00</div>
-                <div id="pris0"></div>
+              <div>kl. 00.00</div>
+              <div id="pris0"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 01.00</div>
-                <div id="pris1"></div>
+              <div>kl. 01.00</div>
+              <div id="pris1"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 02.00</div>
-                <div id="pris2"></div>
+              <div>kl. 02.00</div>
+              <div id="pris2"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 03.00</div>
-                <div id="pris3"></div>
+              <div>kl. 03.00</div>
+              <div id="pris3"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 04.00</div>
-                <div id="pris4"></div>
+              <div>kl. 04.00</div>
+              <div id="pris4"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 05.00</div>
-                <div id="pris5"></div>
+              <div>kl. 05.00</div>
+              <div id="pris5"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 06.00</div>
-                <div id="pris6"></div>
+              <div>kl. 06.00</div>
+              <div id="pris6"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 07.00</div>
-                <div id="pris7"></div>
+              <div>kl. 07.00</div>
+              <div id="pris7"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 08.00</div>
-                <div id="pris8"></div>
+              <div>kl. 08.00</div>
+              <div id="pris8"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 09.00</div>
-                <div id="pris9"></div>
+              <div>kl. 09.00</div>
+              <div id="pris9"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 10.00</div>
-                <div id="pris10"></div>
+              <div>kl. 10.00</div>
+              <div id="pris10"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 11.00</div>
-                <div id="pris11"></div>
+              <div>kl. 11.00</div>
+              <div id="pris11"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 12.00</div>
-                <div id="pris12"></div>
+              <div>kl. 12.00</div>
+              <div id="pris12"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 13.00</div>
-                <div id="pris13"></div>
+              <div>kl. 13.00</div>
+              <div id="pris13"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 14.00</div>
-                <div id="pris14"></div>
+              <div>kl. 14.00</div>
+              <div id="pris14"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 15.00</div>
-                <div id="pris15"></div>
+              <div>kl. 15.00</div>
+              <div id="pris15"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 16.00</div>
-                <div id="pris16"></div>
+              <div>kl. 16.00</div>
+              <div id="pris16"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 17.00</div>
-                <div id="pris17"></div>
+              <div>kl. 17.00</div>
+              <div id="pris17"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 18.00</div>
-                <div id="pris18"></div>
+              <div>kl. 18.00</div>
+              <div id="pris18"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 19.00</div>
-                <div id="pris19"></div>
+              <div>kl. 19.00</div>
+              <div id="pris19"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 20.00</div>
-                <div id="pris20"></div>
+              <div>kl. 20.00</div>
+              <div id="pris20"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 21.00</div>
-                <div id="pris21"></div>
+              <div>kl. 21.00</div>
+              <div id="pris21"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 22.00</div>
-                <div id="pris22"></div>
+              <div>kl. 22.00</div>
+              <div id="pris22"></div>
             </div>
             <div class="oversigt-container">
-                <div> kl. 23.00</div>
-                <div id="pris23"></div>
+              <div>kl. 23.00</div>
+              <div id="pris23"></div>
             </div>
-
-
           </div>
         </div>
         <div class="page page3">
           <p>HISTORIK</p>
+          <div id="historik-wrapper">
+            <div id="calendar-container" class="oversigt-container">
+              <div id="selected-date"></div>
+              <input type="date"  id="datepicker">
+              <i id="dateIcon" class="fa-solid fa-calendar-days"></i>
+            </div>
+              <div class="oversigt-container">
+                <div> 123123 </div>
+                <div> 123123 </div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+              <div class="oversigt-container">
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
