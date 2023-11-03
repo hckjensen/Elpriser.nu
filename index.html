@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ElPriser</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/slider.css">
     <script src="assets/js/script.js" defer></script>
     <script src="assets/js/modal.js" defer></script>
     <script
@@ -32,9 +33,33 @@
     <main>
         <div class="modal" id="modal">
             <div class="innerModal" id="innerModal">
-                <i id="closeModal" class="fa-regular fa-circle-xmark" onclick="closeModal()"></i>
-                <div class="contentwrapper">
-                    
+                <i id="closeModal" class="fa-regular fa-circle-xmark"></i>
+                <div class="content-wrapper">
+                    <h2>INDSTILLINGER</h2>
+                    <div class="settings-container">
+                        <div>PRISER INKL. MOMS</div>
+                        <div>
+                            <label class="switch" for="checkbox">
+                                <input type="checkbox" id="checkbox" />
+                                <div class="slider round"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="settings-container">
+                        <div>LAVESTE PRIS ALARM</div>
+                        <div>
+                            <label class="switch2" for="checkbox2">
+                                <input type="checkbox" id="checkbox2" />
+                                <div class="slider2 round2"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="settings-container">
+                        <div>VÆLG EN REGION</div>
+                        <div>
+                            dropdown SOONTM
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -45,14 +70,14 @@
             <div id="eclipse1">
               <div id="eclipse2">
                 <div id="eclipse3">
-                  <p>AMOUNT</p>
-                  <p>PER kWh</p>
+                  <p id="currentPrice"></p>
+                  <p>PR. kWh</p>
                 </div>
               </div>
             </div>
           </div>
           <div id="currentTime">
-            <p>currentTime</p>
+            <p id="currentHour"></p>
           </div>
           <div id="lowHigh">
             <div id="lowPrice">

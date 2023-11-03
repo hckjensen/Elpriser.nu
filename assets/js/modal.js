@@ -1,15 +1,19 @@
 const openModal = document.getElementById('openModal')
 const modal = document.getElementById('modal')
+const closeModal = document.getElementById('closeModal')
 
-const closeModal = () => {
-    if(event.target === modal || document.getElementById('closeModal')){
-        modal.style.display = 'none'; 
-    }
-}
+
 
 openModal.addEventListener('click', function() {
     modal.style.display = 'block';
 })
 
-modal.addEventListener('click', closeModal)
+window.onclick = function(event) {
+    if(event.target === modal){
+        modal.style.display = "none"
+    }
+}
 
+closeModal.addEventListener('click', function() {
+    modal.style.display = "none"
+})
